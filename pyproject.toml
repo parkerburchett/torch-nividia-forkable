@@ -1,0 +1,35 @@
+[tool.poetry]
+authors      = ["Parker Burchett parkerburchett@gmail.com"]
+description  = ""
+name         = "YOUR_NAME_HERE"
+package-mode = false
+readme       = "README.md"
+version      = "0.1.0"
+
+[tool.poetry.dependencies]
+numpy  = "^1.26.4"
+python = "^3.12"
+black = "^24.4.2"
+ruff = "^0.5.1"
+jupyter = "^1.0.0"
+
+
+
+
+torch       = { version = "^2.3", source = "pytorch-cuda"}
+torchvision = { version = "^0.18", source = "pytorch-cuda"}
+scikit-learn = "^1.5.1"
+
+    
+[[tool.poetry.source]]
+name     = "pytorch-cuda"
+priority = "explicit"
+url      = "https://download.pytorch.org/whl/cu121"
+
+
+# ============ END OF TORCH PART ============
+# ===========================================
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires      = ["poetry-core"]
